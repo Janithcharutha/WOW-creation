@@ -8,7 +8,7 @@ export default function Testimonial() {
       {/* Profile image on the left */}
       <div className="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-gray-300 shadow-lg mr-6">
         <Image
-          src="/images/profile.jpg" // Change to the correct image path
+          src="/images/profile1.jpg" // Change to the correct image path
           alt="Founder Image"
           width={192} // Increased size
           height={192} // Increased size
