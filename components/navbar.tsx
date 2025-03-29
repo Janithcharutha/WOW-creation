@@ -16,7 +16,7 @@ export default function Navbar() {
         <ul className="flex space-x-10 text-white text-lg">
           {/* Design */}
           <li className="relative group">
-            <Link href="/services/design" className="hover:text-gray-300 text-lg">
+            <Link href="" className="hover:text-gray-300 text-lg">
               DESIGN
             </Link>
             <ul className="absolute left-1/2 transform -translate-x-1/2 bg-[#FF2DF1] text-black shadow-2xl p-2 w-56 space-y-2 rounded-lg hidden group-hover:block transition-all duration-500 ease-out scale-95 group-hover:scale-100">
