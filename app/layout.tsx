@@ -1,16 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-// import Navbar from "../components/navbar";
-// import Footer from "../components/footer"; 
-// import HeroSection from "../components/heroSection";
-    
-// import WelcomeComponent from "../components/welcomeComponent";
-// import StatsComponent from "../components/statsComponent";
-// import ServicesComponent from "../components/servicesComponent";
-// import ImageSlider from "../components/imageSlider";
 
-
+// Define the fonts correctly
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -38,15 +30,9 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" />
       </head>
       <body className={`bg-gray-100 ${geistSans.variable} ${geistMono.variable}`}>
-        {/* <Navbar />
-        <HeroSection />
-        <WelcomeComponent />
-       
-        <ServicesComponent />
-        <ImageSlider /> */}
-        <main className="container mx-auto p-6">{children}</main>
-        {/* <StatsComponent />
-        <Footer /> */}
+        <main className="container mx-auto p-6 h-screen">
+          {children}
+        </main>
       </body>
     </html>
   );

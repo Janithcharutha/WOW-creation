@@ -1,7 +1,7 @@
 "use client";
 export default function Footer() {
     return (
-      <footer className="bg-gray-800 text-white p-6 mt-8">
+      <footer className="bg-[#620174] text-white p-6 mt-8">
         <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
           
           {/* About Us Section */}
@@ -44,7 +44,7 @@ export default function Footer() {
           {/* Location Section */}
           <div>
             <h3 className="text-xl font-bold mb-4">Location</h3>
-            <p className="text-sm">Monaragala, Sri Lanka</p>
+            <p className="text-sm">Sri Lanka</p>
           </div>
         </div>
   

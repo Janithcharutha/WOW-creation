@@ -17,27 +17,20 @@ const geistSans = Geist({
 
 const geistMono = Geist_Mono({
   subsets: ['latin'],
-  variable: '--geist-sans',
+  variable: '--geist-mono', // Corrected variable for geist-mono font
 });
 
 export default function Home() {
   return (
-    <html lang="en">
-      <head>
-        <title>My Fullstack Website</title>
-        <link rel="icon" href="/favicon.ico" />
-      </head>
-      <body className={`bg-gray-100 ${geistSans.variable} ${geistMono.variable}`}>
-        <Navbar />
-        <HeroSection />
-        <WelcomeComponent />
-        <DesignServices /> 
-        <ImageSlider />
-        <ServicesComponent />
-        
-        <Testimonial />
-        <Footer />
-      </body>
-    </html>
+    <div className="h-screen flex flex-col">
+      <Navbar />
+      <HeroSection />
+      <WelcomeComponent />
+      <DesignServices />
+      <ImageSlider />
+      <ServicesComponent />
+      <Testimonial />
+      <Footer />
+    </div>
   );
 }

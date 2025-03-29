@@ -5,11 +5,11 @@ import Image from "next/image";
 
 export default function Navbar() {
   return (
-    <nav className="bg-[#A5158C] p-4 shadow-lg z-50 relative">
+    <nav className="bg-[#620174] p-4 shadow-lg z-50 relative">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <Link href="/">
-          <Image src="/images/logo.jpg" alt="Logo" width={50} height={50} className="cursor-pointer" />
+          <Image src="/images/logo.png" alt="Logo" width={50} height={50} className="cursor-pointer" />
         </Link>
 
         {/* Navigation Links */}
@@ -21,47 +21,47 @@ export default function Navbar() {
             </Link>
             <ul className="absolute left-1/2 transform -translate-x-1/2 bg-[#FF2DF1] text-black shadow-2xl p-2 w-56 space-y-2 rounded-lg hidden group-hover:block transition-all duration-500 ease-out scale-95 group-hover:scale-100">
               <li>
-                <Link href="/services/brand-design" className="block px-4 py-2 text-sm hover:bg-pink-500 transition-all duration-500 ease-in-out transform hover:scale-105 hover:text-black font-semibold">
+                <Link href="/services/design/brand-design" className="block px-4 py-2 text-sm hover:bg-pink-500 transition-all duration-500 ease-in-out transform hover:scale-105 hover:text-black font-semibold">
                   Brand Design
                 </Link>
               </li>
               <li>
-                <Link href="/services/logo-design" className="block px-4 py-2 text-sm hover:bg-pink-500 transition-all duration-500 ease-in-out transform hover:scale-105 hover:text-black font-semibold">
+                <Link href="/services/design/logo-design" className="block px-4 py-2 text-sm hover:bg-pink-500 transition-all duration-500 ease-in-out transform hover:scale-105 hover:text-black font-semibold">
                   Logo Design
                 </Link>
               </li>
               <li>
-                <Link href="/services/packaging-design" className="block px-4 py-2 text-sm hover:bg-pink-500 transition-all duration-500 ease-in-out transform hover:scale-105 hover:text-black font-semibold">
+                <Link href="/services/design/packaging-design" className="block px-4 py-2 text-sm hover:bg-pink-500 transition-all duration-500 ease-in-out transform hover:scale-105 hover:text-black font-semibold">
                   Packaging Design
                 </Link>
               </li>
               <li>
-                <Link href="/services/packaging-design" className="block px-4 py-2 text-sm hover:bg-pink-500 transition-all duration-500 ease-in-out transform hover:scale-105 hover:text-black font-semibold">
-                social-media-design
+                <Link href="/services/design/social-media-design" className="block px-4 py-2 text-sm hover:bg-pink-500 transition-all duration-500 ease-in-out transform hover:scale-105 hover:text-black font-semibold">
+                social media design
                 </Link>
               </li>
               <li>
-                <Link href="/services/packaging-design" className="block px-4 py-2 text-sm hover:bg-pink-500 transition-all duration-500 ease-in-out transform hover:scale-105 hover:text-black font-semibold">
-                label-design
+                <Link href="/services/design/label-design" className="block px-4 py-2 text-sm hover:bg-pink-500 transition-all duration-500 ease-in-out transform hover:scale-105 hover:text-black font-semibold">
+                label design
                 </Link>
               </li>
               <li>
-                <Link href="/services/packaging-design" className="block px-4 py-2 text-sm hover:bg-pink-500 transition-all duration-500 ease-in-out transform hover:scale-105 hover:text-black font-semibold">
-                business-card
+                <Link href="/services/design/business-card" className="block px-4 py-2 text-sm hover:bg-pink-500 transition-all duration-500 ease-in-out transform hover:scale-105 hover:text-black font-semibold">
+                business card
                 </Link>
               </li>
               <li>
-                <Link href="/services/packaging-design" className="block px-4 py-2 text-sm hover:bg-pink-500 transition-all duration-500 ease-in-out transform hover:scale-105 hover:text-black font-semibold">
+                <Link href="/services/design/letterhead-design" className="block px-4 py-2 text-sm hover:bg-pink-500 transition-all duration-500 ease-in-out transform hover:scale-105 hover:text-black font-semibold">
                 Letterhead Design
                 </Link>
               </li>
               <li>
-                <Link href="/services/packaging-design" className="block px-4 py-2 text-sm hover:bg-pink-500 transition-all duration-500 ease-in-out transform hover:scale-105 hover:text-black font-semibold">
+                <Link href="/services/design/t-shirts-design" className="block px-4 py-2 text-sm hover:bg-pink-500 transition-all duration-500 ease-in-out transform hover:scale-105 hover:text-black font-semibold">
                 T-Shirts Design
                 </Link>
               </li>
               <li>
-                <Link href="/services/packaging-design" className="block px-4 py-2 text-sm hover:bg-pink-500 transition-all duration-500 ease-in-out transform hover:scale-105 hover:text-black font-semibold">
+                <Link href="/services/design/banner-design" className="block px-4 py-2 text-sm hover:bg-pink-500 transition-all duration-500 ease-in-out transform hover:scale-105 hover:text-black font-semibold">
                 Banner Design
                 </Link>
               </li>
@@ -142,17 +142,17 @@ export default function Navbar() {
   </Link>
   <ul className="absolute left-1/2 transform -translate-x-1/2 bg-[#FF2DF1] text-black shadow-2xl p-2 w-56 space-y-2 rounded-lg hidden group-hover:block transition-all duration-500 ease-out scale-95 group-hover:scale-100">
               <li>
-      <Link href="/services/interior-design" className="block px-4 py-2 text-sm hover:bg-yellow-600 transition-all duration-500 ease-in-out transform hover:scale-105 hover:text-black font-semibold">
+      <Link href="/services/interior-design" className="block px-4 py-2 text-sm hover:bg-pink-500 transition-all duration-500 ease-in-out transform hover:scale-105 hover:text-black font-semibold">
         Interior Design
       </Link>
     </li>
     <li>
-      <Link href="/services/vehicle-branding" className="block px-4 py-2 text-sm hover:bg-yellow-600 transition-all duration-500 ease-in-out transform hover:scale-105 hover:text-black font-semibold">
+      <Link href="/services/vehicle-branding" className="block px-4 py-2 text-sm hover:bg-pink-500 transition-all duration-500 ease-in-out transform hover:scale-105 hover:text-black font-semibold">
         Vehicle Branding
       </Link>
     </li>
     <li>
-      <Link href="/services/shop-branding" className="block px-4 py-2 text-sm hover:bg-yellow-600 transition-all duration-500 ease-in-out transform hover:scale-105 hover:text-black font-semibold">
+      <Link href="/services/shop-branding" className="block px-4 py-2 text-sm hover:bg-pink-500 transition-all duration-500 ease-in-out transform hover:scale-105 hover:text-black font-semibold">
         Shop Branding
       </Link>
     </li>
@@ -166,17 +166,17 @@ export default function Navbar() {
   </Link>
   <ul className="absolute left-1/2 transform -translate-x-1/2 bg-[#FF2DF1] text-black shadow-2xl p-2 w-56 space-y-2 rounded-lg hidden group-hover:block transition-all duration-500 ease-out scale-95 group-hover:scale-100">
               <li>
-      <Link href="/services/digital-marketing" className="block px-4 py-2 text-sm hover:bg-yellow-600 transition-all duration-500 ease-in-out transform hover:scale-105 hover:text-black font-semibold">
+      <Link href="/services/digital-marketing" className="block px-4 py-2 text-sm hover:bg-pink-500 transition-all duration-500 ease-in-out transform hover:scale-105 hover:text-black font-semibold">
         Digital Marketing
       </Link>
     </li>
     <li>
-      <Link href="/services/social-media-marketing" className="block px-4 py-2 text-sm hover:bg-yellow-600 transition-all duration-500 ease-in-out transform hover:scale-105 hover:text-black font-semibold">
+      <Link href="/services/social-media-marketing" className="block px-4 py-2 text-sm hover:bg-pink-500 transition-all duration-500 ease-in-out transform hover:scale-105 hover:text-black font-semibold">
         Social Media Marketing
       </Link>
     </li>
     <li>
-      <Link href="/services/social-media-campaign" className="block px-4 py-2 text-sm hover:bg-yellow-600 transition-all duration-500 ease-in-out transform hover:scale-105 hover:text-black font-semibold">
+      <Link href="/services/social-media-campaign" className="block px-4 py-2 text-sm hover:bg-pink-500 transition-all duration-500 ease-in-out transform hover:scale-105 hover:text-black font-semibold">
         Social Media Campaign Design
       </Link>
     </li>
