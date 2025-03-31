@@ -70,48 +70,48 @@ export default function Navbar() {
 
           {/* Printing */}
           <li className="relative group">
-            <Link href="/services/print" className="hover:text-gray-300 text-lg">
+            <Link href="" className="hover:text-gray-300 text-lg">
               PRINTING
             </Link>
             <ul className="absolute left-1/2 transform -translate-x-1/2 bg-[#FF2DF1] text-black shadow-2xl p-2 w-56 space-y-2 rounded-lg hidden group-hover:block transition-all duration-500 ease-out scale-95 group-hover:scale-100">
               <li>
-                <Link href="/services/poster-design" className="block px-4 py-2 text-sm hover:bg-pink-500 transition-all duration-500 ease-in-out transform hover:scale-105 hover:text-black font-semibold">
-                  Poster Design
+                <Link href="/services/print/poster-print" className="block px-4 py-2 text-sm hover:bg-pink-500 transition-all duration-500 ease-in-out transform hover:scale-105 hover:text-black font-semibold">
+                  Poster Printing
                 </Link>
               </li>
               <li>
-                <Link href="/services/flyer-design" className="block px-4 py-2 text-sm hover:bg-pink-500 transition-all duration-500 ease-in-out transform hover:scale-105 hover:text-black font-semibold">
-                  Flyer Design
+                <Link href="/services/print/flyer-print" className="block px-4 py-2 text-sm hover:bg-pink-500 transition-all duration-500 ease-in-out transform hover:scale-105 hover:text-black font-semibold">
+                  Flyer Printing
                 </Link>
               </li>
               <li>
-                <Link href="/services/poster-design" className="block px-4 py-2 text-sm hover:bg-pink-500 transition-all duration-500 ease-in-out transform hover:scale-105 hover:text-black font-semibold">
-                brochure-design
+                <Link href="/services/print/brochure-print" className="block px-4 py-2 text-sm hover:bg-pink-500 transition-all duration-500 ease-in-out transform hover:scale-105 hover:text-black font-semibold">
+                brochure Printing
                 </Link>
               </li>
               <li>
-                <Link href="/services/poster-design" className="block px-4 py-2 text-sm hover:bg-pink-500 transition-all duration-500 ease-in-out transform hover:scale-105 hover:text-black font-semibold">
-                leaflet-design
+                <Link href="/services/print/leaflet-print" className="block px-4 py-2 text-sm hover:bg-pink-500 transition-all duration-500 ease-in-out transform hover:scale-105 hover:text-black font-semibold">
+                leaflet Printing
                 </Link>
               </li>
               <li>
-                <Link href="/services/poster-design" className="block px-4 py-2 text-sm hover:bg-pink-500 transition-all duration-500 ease-in-out transform hover:scale-105 hover:text-black font-semibold">
-                banner-design
+                <Link href="/services/print/banner-print" className="block px-4 py-2 text-sm hover:bg-pink-500 transition-all duration-500 ease-in-out transform hover:scale-105 hover:text-black font-semibold">
+                banner Printing
                 </Link>
               </li>
               <li>
-                <Link href="/services/poster-design" className="block px-4 py-2 text-sm hover:bg-pink-500 transition-all duration-500 ease-in-out transform hover:scale-105 hover:text-black font-semibold">
-                menu-design
+                <Link href="/services/print/menu-print" className="block px-4 py-2 text-sm hover:bg-pink-500 transition-all duration-500 ease-in-out transform hover:scale-105 hover:text-black font-semibold">
+                menu Printing
                 </Link>
               </li>
               <li>
-                <Link href="/services/poster-design" className="block px-4 py-2 text-sm hover:bg-pink-500 transition-all duration-500 ease-in-out transform hover:scale-105 hover:text-black font-semibold">
-                book-cover-design
+                <Link href="/services/print/book-cover-print" className="block px-4 py-2 text-sm hover:bg-pink-500 transition-all duration-500 ease-in-out transform hover:scale-105 hover:text-black font-semibold">
+                book-cover Printing
                 </Link>
               </li>
               <li>
-                <Link href="/services/poster-design" className="block px-4 py-2 text-sm hover:bg-pink-500 transition-all duration-500 ease-in-out transform hover:scale-105 hover:text-black font-semibold">
-                catalog-design
+                <Link href="/services/print/catalog-print" className="block px-4 py-2 text-sm hover:bg-pink-500 transition-all duration-500 ease-in-out transform hover:scale-105 hover:text-black font-semibold">
+                catalog Printing
                 </Link>
               </li>
             </ul>

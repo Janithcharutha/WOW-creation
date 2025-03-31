@@ -1,38 +1,37 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";  // Corrected imports
 import "./globals.css";
+import { CloudinaryProvider } from '../components/providers/CloudinaryProvider';
 
-// Define the fonts correctly
+// Define the fonts with correct names
 const geistSans = Geist({
-  variable: "--font-geist-sans",
   subsets: ["latin"],
+  variable: "--font-geist-sans",
 });
 
 const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
   subsets: ["latin"],
+  variable: "--font-geist-mono",
 });
 
 export const metadata: Metadata = {
   title: "My Fullstack Website",
-  description: "A fullstack application built with Next.js, providing a seamless experience for users.",
+  description: "Built with Next.js",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en">
-      <head>
-        <title>My Fullstack Website</title>
-        <link rel="icon" href="/favicon.ico" />
-      </head>
-      <body className={`bg-gray-100 ${geistSans.variable} ${geistMono.variable}`}>
-        <main className="container mx-auto p-6 h-screen">
-          {children}
-        </main>
+    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className="min-h-screen bg-gray-100">
+        <CloudinaryProvider>
+          <main className="mx-auto w-full max-w-7xl p-4 md:p-6">
+            {children}
+          </main>
+        </CloudinaryProvider>
       </body>
     </html>
   );

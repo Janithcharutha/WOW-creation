@@ -2,6 +2,7 @@
 import React from 'react';
 import Navbar from '@/components/navbar';
 import ContactPage from '@/components/contact';
+import ImageUpload from '@/components/ImageUpload';
 
 
 export default function AdvertisingPage() {
@@ -10,7 +11,6 @@ export default function AdvertisingPage() {
       <Navbar />
       
       <ContactPage/>
-      
     </div>
   );
 }

@@ -4,7 +4,7 @@ import DesignProcess from '@/components/designprocess';
 import Image from 'next/image';
 import Contact from '@/components/contactp';
 import Footer from '@/components/footer';
-
+import RecentProjects from '@/components/recentprojects';
 export default function LogoDesign() {
   return (
     <div className="bg-gray-100 min-h-screen">
@@ -20,8 +20,8 @@ export default function LogoDesign() {
       <p className="text-gray-600 text-lg mt-5 mb-8">
         At WOW Creation, we specialize in custom logo design that makes your brand instantly recognizable. Our team of experts works closely with you to create a logo that captures the essence of your brand and sets you apart from the competition. From initial concept to final design, we provide tailored logo design services that reflect your business values and vision. We also offer branding design, rebranding, and visual identity solutions to ensure your entire brand presence is cohesive and impactful. Book a logo design consultation today and let us help you craft the perfect logo for your business.
       </p>
-           <h2 className="text-2xl font-bold text-gray-900 mb-4  text-left">Logo Identity Design Process</h2>
-    
+      <RecentProjects serviceFolder="logo" title="Logo" />
+      <h2 className="text-2xl font-bold text-gray-900 mb-4  text-left">Logo Identity Design Process</h2>
       <div className="w-20 h-1 bg-[#fdd302] mx-left mb-5 "></div>
       <DesignProcess />
       <Contact/>  

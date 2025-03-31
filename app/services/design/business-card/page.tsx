@@ -4,6 +4,7 @@ import DesignProcess from '@/components/designprocess';
 import Image from 'next/image';
 import Contact from '@/components/contactp';
 import Footer from '@/components/footer';
+import RecentProjects from '@/components/recentprojects';
 
 export default function BusinessCardDesign() {
   return (
@@ -20,6 +21,7 @@ export default function BusinessCardDesign() {
       <p className="text-gray-600 text-lg mt-5 mb-8">
         At WOW Creation, we offer custom business card design services that make a lasting impression. A well-designed business card enhances your brand identity and leaves a professional impact on clients. Our expert designers create modern, minimalist, luxury, and creative business card designs tailored to your needs. Whether you need personalized branding, rebranding, or a fresh visual identity, we ensure your business cards reflect your brand’s style. We specialize in professional business card design, ensuring high-quality print-ready and digital business cards that stand out. Book a business card design consultation today and elevate your networking game!
       </p>
+            <RecentProjects serviceFolder="business" title="Business" />
 
       <h2 className="text-2xl font-bold text-gray-900 mb-4 text-left">Business Card Design Process</h2>
       <div className="w-20 h-1 bg-[#fdd302] mx-left mb-5"></div>

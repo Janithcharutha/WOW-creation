@@ -14,11 +14,11 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-bold mb-4">Services</h3>
             <ul className="text-sm space-y-2">
-              <li><a href="/services/design" className="hover:text-gray-300">Design</a></li>
-              <li><a href="/services/print" className="hover:text-gray-300">Print</a></li>
-              <li><a href="/services/video-editing" className="hover:text-gray-300">Video Editing</a></li>
-              <li><a href="/services/marketing" className="hover:text-gray-300">Marketing</a></li>
-              <li><a href="/services/advertising" className="hover:text-gray-300">Advertising</a></li>
+              <li><a href="" className="hover:text-gray-300">Design</a></li>
+              <li><a href="" className="hover:text-gray-300">Print</a></li>
+              <li><a href="" className="hover:text-gray-300">Video Editing</a></li>
+              <li><a href="" className="hover:text-gray-300">Marketing</a></li>
+              <li><a href="" className="hover:text-gray-300">Advertising</a></li>
             </ul>
           </div>
   

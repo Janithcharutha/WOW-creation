@@ -4,7 +4,7 @@ import DesignProcess from '@/components/designprocess';
 import Image from 'next/image';
 import Contact from '@/components/contactp';
 import Footer from '@/components/footer';
-
+import RecentProjects from '@/components/recentprojects';
 export default function LetterheadDesign() {
   return (
     <div className="bg-gray-100 min-h-screen">
@@ -22,7 +22,7 @@ export default function LetterheadDesign() {
         
         Whether you need a corporate letterhead, business letterhead, personal letterhead, or digital letterhead, our expert designers craft high-quality, print-ready designs tailored to your brand's style and identity. Our custom letterhead designs feature unique layouts, brand-consistent colors, and professional typography to leave a lasting impression. Book a letterhead design consultation today and give your business documents a professional and elegant touch!
       </p>
-
+ <RecentProjects serviceFolder="letterhead" title="Letterhead" />
       <h2 className="text-2xl font-bold text-gray-900 mb-4 text-left">Letterhead Design Process</h2>
       <div className="w-20 h-1 bg-[#fdd302] mx-left mb-5"></div>
 
