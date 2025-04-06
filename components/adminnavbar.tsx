@@ -8,7 +8,7 @@ export default function NavbarAdmin() {
     <nav className="bg-[#620210] p-4 shadow-lg z-50 relative">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
-        <Link href="/">
+        <Link href="">
           <Image src="/images/logo.png" alt="Logo" width={50} height={50} className="cursor-pointer" />
         </Link>
 
@@ -184,7 +184,7 @@ export default function NavbarAdmin() {
 </li>
           {/* Contact */}
        <li>
-            <Link href="/contact" className="hover:text-gray-300 text-lg">
+            <Link href="" className="hover:text-gray-300 text-lg">
               CONTACT US
             </Link>
           </li>

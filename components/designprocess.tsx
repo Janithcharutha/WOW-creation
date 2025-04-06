@@ -12,7 +12,7 @@ export default function DesignProcess() {
   ];
 
   return (
-    <section className="py-6 px-8 bg-white text-center">
+    <section className="py-6 px-8 bg-white text-center mx-4">
      {/* <h2 className="text-2xl font-bold text-gray-900 mb-4  text-left">Brand Identity Design Process</h2>
     
       <div className="w-20 h-1 bg-[#fdd302] mx-left mb-5 "></div> */}

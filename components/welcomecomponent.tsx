@@ -2,7 +2,7 @@
 
 export default function WelcomeComponent() {
   return (
-    <section className="min-h-screen flex flex-col justify-center bg-white text-center">
+    <section className="min-h-screen flex flex-col justify-center bg-white text-center ">
       <div className="max-w-full mx-auto px-4"> {/* Remove max-w-4xl to allow full width */}
         <h1 className="text-gray-700 text-4xl md:text-5xl font-extrabold mb-10">
           WELCOME TO WOW CREATION,CREATIVE GRAPHIC DESIGN SRI LANKA.

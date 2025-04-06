@@ -6,7 +6,7 @@ export default function HeroSection() {
   return (
     <section className="relative flex items-center justify-center text-white h-screen bg-gray-100">
       {/* Left Side: Background Image using Next.js Image component */}
-      <div className="w-full lg:w-1/2 relative">
+      <div className="w-full lg:w-1/2 relative mb-14">
         <Image
           src="/images/hero-image.jpg"
           alt="Hero image"

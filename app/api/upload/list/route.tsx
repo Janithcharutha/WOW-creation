@@ -11,9 +11,13 @@ export async function GET(request: Request) {
   try {
     const { searchParams } = new URL(request.url);
     const folder = searchParams.get('folder');
+    const excludeFolder = searchParams.get('excludeFolder');
 
     if (!folder) {
-      return NextResponse.json({ error: 'No folder specified' }, { status: 400 });
+      return NextResponse.json(
+        { error: 'No folder specified' },
+        { status: 400 }
+      );
     }
 
     const result = await cloudinary.api.resources({
@@ -22,9 +26,19 @@ export async function GET(request: Request) {
       max_results: 100
     });
 
+    // Filter out hot deals from regular images if needed
+    if (excludeFolder === 'hotdeals') {
+      result.resources = result.resources.filter(
+        (resource: any) => !resource.public_id.includes('/hotdeals/')
+      );
+    }
+
     return NextResponse.json(result);
   } catch (error) {
     console.error('Failed to fetch images:', error);
-    return NextResponse.json({ error: 'Failed to fetch images' }, { status: 500 });
+    return NextResponse.json(
+      { error: 'Failed to fetch images' },
+      { status: 500 }
+    );
   }
 }

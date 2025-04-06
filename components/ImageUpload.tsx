@@ -105,7 +105,7 @@ export default function ImageUpload() {
           accept="image/*"
           onChange={handleUpload}
           disabled={uploading}
-          className="block w-full text-sm text-gray-500
+          className="block w-full text-sm text-black
             file:mr-4 file:py-2 file:px-4
             file:rounded-full file:border-0
             file:text-sm file:font-semibold
@@ -113,7 +113,7 @@ export default function ImageUpload() {
             hover:file:bg-violet-100"
         />
         {uploading && (
-          <p className="mt-2 text-sm text-gray-500">Uploading...</p>
+          <p className="mt-2 text-sm text-black">Uploading...</p>
         )}
       </div>
 

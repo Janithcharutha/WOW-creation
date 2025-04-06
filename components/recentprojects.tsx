@@ -20,13 +20,18 @@ export default function RecentProjects({ serviceFolder, title }: RecentProjectsP
   useEffect(() => {
     async function fetchImages() {
       try {
-        const response = await fetch(`/api/upload/list?folder=${serviceFolder}`);
+        const response = await fetch(`/api/upload/list?folder=${serviceFolder}&excludeFolder=hotdeals`);
         if (!response.ok) {
           throw new Error(`Failed to fetch: ${response.statusText}`);
         }
         const data = await response.json();
         if (data.resources) {
-          setImages(data.resources.map((resource: any) => ({
+          // Filter out hot deals images
+          const regularImages = data.resources.filter((resource: any) => 
+            !resource.public_id.includes('/hotdeals/')
+          );
+          
+          setImages(regularImages.map((resource: any) => ({
             id: resource.asset_id,
             publicId: resource.public_id
           })));
@@ -50,8 +55,8 @@ export default function RecentProjects({ serviceFolder, title }: RecentProjectsP
   }
 
   return (
-    <section className="py-12 text-center">
-      <h2 className="text-2xl font-bold text-gray-900 mb-3 text-left">Recent {title} Projects</h2>
+    <section className="py-12 text-center mx-4">
+      <h2 className="text-2xl font-bold text-black mb-3 text-left">Recent {title} Projects</h2>
       <div className="w-20 h-1 bg-[#fdd302] md-2 mx-left"></div>
 
       <div className="grid grid-cols-1 mt-3 md:grid-cols-3 gap-6">

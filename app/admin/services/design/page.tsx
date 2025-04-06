@@ -1,14 +1,12 @@
+'use client';
 
-  'use client';
-  import React from 'react';
-  import Navbar from '@/components/navbar';
-  
-  export default function Design() {
-    return (
-      <div className="bg-gray-100 min-h-screen">
-        <Navbar />
-        
-      </div>
-    );
-  }
-  
+import NavbarAdmin from '@/components/adminnavbar';
+import ServiceImageUpload from '@/components/ServiceImageUpload';
+
+export default function AdminBannerDesign() {
+  return (
+    <div className="bg-gray-100 min-h-screen">
+      <NavbarAdmin />
+    </div>
+  );
+}

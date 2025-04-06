@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function DesignServices() {
   return (
-    <section className="py-12 bg-gray-50 z-10 relative">
+    <section className="py-12 bg-gray-50 z-10 relative ">
       <div className="max-w-6xl mx-auto px-4 text-center">
         <h1 className="text-4xl font-bold text-[#620174] mb-6">
           Popular Design Services

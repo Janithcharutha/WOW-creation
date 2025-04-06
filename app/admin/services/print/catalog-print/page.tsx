@@ -1,32 +1,14 @@
-'use client';
-import Navbar from '@/components/navbar';
-import DesignProcess from '@/components/designprocess';
-import Image from 'next/image';
-import Contact from '@/components/contactp';
-import Footer from '@/components/footer';
+import NavbarAdmin from '@/components/adminnavbar';
+import ServiceImageUpload from '@/components/ServiceImageUpload';
 
-export default function BannerDesign() {
+export default function AdminCatalogPrint() {
   return (
     <div className="bg-gray-100 min-h-screen">
-      <Navbar />
-      <h1 className="text-4xl font-bold text-black text-left mb-2 mt-5">Banner Design Services</h1>
-      <div className="w-40 h-1 bg-[#fdd302] mx-left mb-5 "></div>
-      
-      {/* Full screen image */}
-      <div className="w-full h-screen relative">
-        <Image src="/images/banner.jpg" alt="Banner Design Services" layout="fill" objectFit="cover" className="absolute inset-0" />
+      <NavbarAdmin />
+      <div className="container mx-auto py-8">
+        <h1 className="text-3xl text-gray-600 font-bold mb-8">Catalog Print Management</h1>
+        <ServiceImageUpload serviceFolder="catalogprint" title="Catalog Print" />
       </div>
-
-      <p className="text-gray-600 text-lg mt-5 mb-8">
-        At WOW Creation, we specialize in custom banner design that enhances your brand’s visual identity. Whether you need digital banners, social media banners, website banners, or print banners, our expert designers create high-quality visuals tailored to your branding strategy. We provide rebranding solutions, graphic design expertise, and branding consultation to ensure your banners align with your business goals. Book a banner design consultation today and let’s create eye-catching designs that make an impact!
-      </p>
-
-      <h2 className="text-2xl font-bold text-gray-900 mb-4 text-left">Banner Design Process</h2>
-      <div className="w-20 h-1 bg-[#fdd302] mx-left mb-5"></div>
-      
-      <DesignProcess />
-      <Contact />  
-      <Footer />
     </div>
   );
 }

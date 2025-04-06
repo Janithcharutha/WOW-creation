@@ -28,7 +28,7 @@ export default function RootLayout({
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
       <body className="min-h-screen bg-gray-100">
         <CloudinaryProvider>
-          <main className="mx-auto w-full max-w-7xl p-4 md:p-6">
+          <main className="mx-auto w-full  ">
             {children}
           </main>
         </CloudinaryProvider>

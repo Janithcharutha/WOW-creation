@@ -5,7 +5,7 @@
     
     export default function Print() {
       return (
-        <div className="bg-gray-100 min-h-screen">
+        <div className="bg-gray-100 mx-auto w-full  p-2">
           <Navbar />
           
         </div>
